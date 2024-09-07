@@ -1,0 +1,124 @@
+* {
+    margin: 4px;
+    padding: 2px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007BFF;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0.6rem 1.6rem;
+    background-color: #007BFF;
+    color: white;
+    border: 45px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Mobile Devices - less than 600px */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Tablets - between 600px and 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    h1, h2 {
+        font-size: 1.75rem;
+    }
+
+    .profile-pic {
+        width: 130px;
+        height: 130px;
+    }
+
+    button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+}
+
+/* Desktops - larger than 1024px */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 800px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
